@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LA-Store - Food, Items and Clothing</title>
+</head>
+<body>
+
+  <header id="top">
+    <h1> <img src="logo.jpg" style="width: 50px; height: auto;" alt="LA-Store Logo"> LA-Store</h1>
+
+    <form action="#" method="get">
+      <input type="search" name="q" placeholder="Search products...">
+      <button type="submit">Search</button>
+    </form>
+
+    <nav>
+      <a href="#home">Home</a> |
+      <a href="#food">Food</a> |
+      <a href="#items">Items</a> |
+      <a href="#clothing">Clothing</a> |
+      <a href="#cart">Cart</a> |
+      <a href="#checkout">Checkout</a>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="home">
+      <h2>Shop Smart, Live Better</h2>
+      <p>La-Store is your go-to online shop for everyday essentials, stylish clothing, and home accessories—all at affordable prices with a convenient shopping experience.</p>
+      <a href="#food"><button type="button">Shop Now</button></a>
+      <hr>
+    </section>
+
+    <!-- FOOD -->
+    <section id="food">
+      <h2>Food</h2>
+      <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+          <td>
+            <h3>🍎 Fresh Apples</h3>
+            <p>Crisp and sweet, sold per kilo.</p>
+            <p><strong>₱120.00</strong></p>
+            <button type="button">Add to Cart</button>
+          </td>
+          <td>
+            <h3>🥖 Baguette</h3>
+            <p>Freshly baked every morning.</p>
+            <p><strong>₱85.00</strong></p>
+            <button type="button">Add to Cart</button>
+          </td>
+          <td>
+            <h3>🥛 Fresh Milk</h3>
+            <p>One liter of farm-fresh milk.</p>
+            <p><strong>₱95.00</strong></p>
+            <button type="button">Add to Cart</button>
+          </td>
+        </tr>
+      </table>
+
+      <h3>Featured Photos</h3>
+      <figure>
+        <img src="apples.jpg" alt="A pile of red apples" width="300" height="200">
+        <figcaption><strong>Fresh Apples</strong> - Crisp and sweet.</figcaption>
+      </figure>
+      <figure>
+        <img src="baguette.jpg" alt="A golden baguette" width="300" height="200">
+        <figcaption><strong>Baguette</strong> - Baked fresh daily.</figcaption>
+      </figure>
+      <figure>
+        <img src="milk.jpg" alt="A bottle of fresh milk" width="200" height="300">
+        <figcaption><strong>Fresh Milk</strong> - Cold and creamy.</figcaption>
+      </figure>
+      <small>These placeholders can be replaced with real product photos.</small>
+      <hr>
+    </section>
+
+    <!-- ITEMS -->
+    <section id="items">
+  <h2>Items</h2>
+  <table border="1" cellpadding="10" cellspacing="0">
+    <tr>
+      <td>
+        <h3>☕ Ceramic Mug</h3>
+        <p>Minimalist ceramic mug for everyday use.</p>
+        <p><strong>₱220.00</strong></p>
+        <button type="button">Add to Cart</button>
+      </td>
+      <td>
+        <h3>👜 Canvas Tote Bag</h3>
+        <p>Reusable tote bag for shopping and travel.</p>
+        <p><strong>₱280.00</strong></p>
+        <button type="button">Add to Cart</button>
+      </td>
+      <td>
+        <h3>📓 Notebook</h3>
+        <p>Hardcover notebook for notes and journaling.</p>
+        <p><strong>₱150.00</strong></p>
+        <button type="button">Add to Cart</button>
+      </td>
+    </tr>
+  </table>
+  <hr>
+</section>
+
+    <!-- CLOTHING -->
+<section id="clothing">
+  <h2>Clothing</h2>
+  <table border="1" cellpadding="10" cellspacing="0">
+    <tr>
+      <td>
+        <h3>👗 Summer Dress</h3>
+        <p>Lightweight and comfortable casual dress.</p>
+        <p><strong>₱599.00</strong></p>
+        <p>
+          <label for="size-dress">Size:</label>
+          <select id="size-dress" name="size-dress">
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+          </select>
+        </p>
+        <button type="button">Add to Cart</button>
+      </td>
+      <td>
+        <h3>🧥 Denim Jacket</h3>
+        <p>Classic denim jacket for casual outfits.</p>
+        <p><strong>₱899.00</strong></p>
+        <p>
+          <label for="size-jacket">Size:</label>
+          <select id="size-jacket" name="size-jacket">
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+          </select>
+        </p>
+        <button type="button">Add to Cart</button>
+      </td>
+      <td>
+        <h3>🩴 Slide Sandals</h3>
+        <p>Comfortable slip-on sandals for everyday wear.</p>
+        <p><strong>₱349.00</strong></p>
+        <p>
+          <label for="size-sandals">Size:</label>
+          <select id="size-sandals" name="size-sandals">
+            <option>36</option>
+            <option>37</option>
+            <option>38</option>
+            <option>39</option>
+            <option>40</option>
+            <option>41</option>
+            <option>42</option>
+          </select>
+        </p>
+        <button type="button">Add to Cart</button>
+      </td>
+    </tr>
+  </table>
+  <hr>
+</section>
+
+    <!-- CHECKOUT -->
+    <section id="checkout">
+      <h2>Checkout</h2>
+      <form action="#" method="post">
+
+        <fieldset>
+          <legend>Shipping Details</legend>
+          <p>
+            <label for="fullname">Full name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </p>
+          <p>
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="0917 123 4567">
+          </p>
+          <p>
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="40" required></textarea>
+          </p>
+          <p>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" list="cities">
+            <datalist id="cities">
+              <option value="Manila">
+              <option value="Quezon City">
+              <option value="Cebu City">
+              <option value="Davao City">
+            </datalist>
+          </p>
+          <p>
+            <label for="deldate">Delivery date:</label>
+            <input type="date" id="deldate" name="deldate">
+          </p>
+          <p>
+            <label for="delopt">Delivery option:</label>
+            <select id="delopt" name="delopt">
+              <option>Standard</option>
+              <option>Express</option>
+              <option>Store Pick-up</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Payment Method</legend>
+          <p>
+            <input type="radio" id="pay-card" name="payment" value="card" checked>
+            <label for="pay-card">Credit / Debit Card</label>
+          </p>
+          <p>
+            <input type="radio" id="pay-cod" name="payment" value="cod">
+            <label for="pay-cod">Cash on Delivery</label>
+          </p>
+          <p>
+            <input type="radio" id="pay-ewallet" name="payment" value="ewallet">
+            <label for="pay-ewallet">E-Wallet</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <input type="checkbox" id="gift" name="extras" value="giftwrap">
+          <label for="gift">Gift wrap</label>
+        </p>
+        <p>
+          <input type="checkbox" id="receipt" name="extras" value="receipt">
+          <label for="receipt">Include receipt</label>
+        </p>
+        <p>
+          <input type="checkbox" id="agree" name="agree" value="yes" required>
+          <label for="agree">I agree to the <a href="#terms-info">Terms &amp; Conditions</a></label>
+        </p>
+
+        <button type="submit">Place Order</button>
+        <button type="reset">Clear</button>
+      </form>
+      <hr>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+
+      <h3>Reach Us</h3>
+      <address>
+        <strong>LA-Store</strong><br>
+        123 Rizal Park<br>
+        Benguet, Philippines<br>
+        Phone: <a href="tel:+639171234567">+63 917 123 4567</a><br>
+        Email: <a href="mailto:yurij@la-store.example">hello@la-store.example</a>
+      </address>
+
+      <h3>Leave a Review</h3>
+      <form action="#" method="post" enctype="multipart/form-data">
+        <p>
+          <label for="rname">Name:</label>
+          <input type="text" id="rname" name="rname" required>
+        </p>
+        <p>
+          <label for="rating">Rating (1-5):</label>
+          <input type="range" id="rating" name="rating" min="1" max="5" value="5">
+        </p>
+        <p>
+          <label for="rtext">Review:</label><br>
+          <textarea id="rtext" name="rtext" rows="4" cols="40" required></textarea>
+        </p>
+        <p>
+          <label for="rphoto">Photo (optional):</label>
+          <input type="file" id="rphoto" name="rphoto" accept="image/*">
+        </p>
+        <button type="submit">Submit Review</button>
+      </form>
+      <hr>
+    </section>
+
+    <!-- LINKS -->
+    <section id="links">
+      <h2>Useful Links</h2>
+      <ul>
+        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">LA-Store on Facebook</a></li>
+        <li><a href="#top">Back to top</a></li>
+      </ul>
+    </section>
+
+    <!-- TERMS -->
+    <section id="terms-info">
+      <h2>Terms &amp; Conditions</h2>
+      <details>
+        <summary>Read the terms</summary>
+        <ol>
+          <li>Returns: Unopened items may be returned within 7 days of delivery.</li>
+          <li>Delivery: Orders are delivered within 1 to 3 business days in Metro Manila.</li>
+          <li>Payment: Payment is collected at checkout or upon delivery, depending on the method chosen.</li>
+        </ol>
+      </details>
+    </section>
+
+  </main>
+
+  <footer>
+    <hr>
+    <p>
+      <a href="#">About Us</a> |
+      <a href="#contact">Contact</a> |
+      <a href="#">Shipping Policy</a> |
+      <a href="#">Returns</a>
+    </p>
+    <p>&copy; 2026 LA-Store. All rights reserved. Created by Yurij Sacoco</p>
+  </footer>
+
+</body>
+</html>
