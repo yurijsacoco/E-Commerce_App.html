@@ -166,6 +166,59 @@
   <hr>
 </section>
 
+    <!-- CART -->
+    <section id="cart">
+            <h2>Your Cart</h2>
+
+            <table border="1" cellpadding="8" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Subtotal</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>🧥 Denim Jacket</td>
+                        <td>₱899.00</td>
+                        <td>
+                            <input type="number" name="jacket-qty" min="1" max="20" value="1" aria-label="Denim Jacket quantity">
+                        </td>
+                        <td>₱899.00</td>
+                        <td><button type="button">Remove</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>🥛 Fresh Milk</td>
+                        <td>₱95.00</td>
+                        <td>
+                            <input type="number" name="milk-qty" min="1" max="20" value="1" aria-label="Fresh Milk quantity">
+                        </td>
+                        <td>₱95.00</td>
+                        <td><button type="button">Remove</button></td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><strong>Total</strong></td>
+                        <td colspan="2"><strong>₱205.00</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <p>
+                <a href="#checkout">
+                    <button type="button">Proceed to Checkout</button>
+                </a>
+            </p>
+            <hr>
+        </section>
+
     <!-- CHECKOUT -->
     <section id="checkout">
       <h2>Checkout</h2>
